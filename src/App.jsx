@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Country from './pages/Country';
 import ErrorPage from './pages/ErrorPage';
+import CountryDetails from './Components/Layout/CountryDetails';
 
 import './App.css'; // Importing App.CSS file
 
@@ -30,6 +31,10 @@ const router=createBrowserRouter([
      { 
       path:"/country",
       element:<Country/>,
+     },
+     { 
+      path:"/country/:id", // this will create dynamic route
+      element:<CountryDetails/>, // then we hit dynamic route this comonent will render
      },
      { 
       path:"contact",

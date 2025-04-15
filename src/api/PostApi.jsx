@@ -10,8 +10,8 @@ export const getCountryData = () => {
 };
 
 // // HTTP GET METHOD fro the indvi. country name
-// export const getCountryIndData = (name) => {
-//   return api.get(
-//     `/name/${name}?fullText=true&fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags`
-//   );
-// };
+export const getCountryIndData = (name) => {
+  return api.get(
+    `/name/${name}?fullText=true&fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags`
+  );
+};
